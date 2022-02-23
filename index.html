@@ -1,0 +1,635 @@
+<html style="width:100%">
+    <head>
+        <title>blogypedia</title>
+        <!-- pour rendre la page responsive pour tout les materirls -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- font awsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href='https://css.gg/arrow-up.css' rel='stylesheet'>
+        <!-- font google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Lobster&family=Oswald:wght@500&family=PT+Sans:ital@1&family=Rowdies:wght@700&family=Rubik+Beastly&display=swap" rel="stylesheet">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- my styles -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- icons -->
+        <link rel = "icon" href ="images/logo.jpg" type = "image/x-icon" >
+    
+    </head>
+    <body style="width:100%">
+      <!-- LOADER -->
+      <div class="loader">
+        <img src="images/load-gif.gif" alt="">
+      </div>
+      <!-- nav -->
+      <div class="nav-item" >  
+     <nav class="container-md container-fluid navbar navbar-expand-md  navbar-dark h-12 " s >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <ul class="navbar-nav d-md-block d-none" >
+          <li class="nav-item row "  >
+              <a href="#" class="nav-link "><i class="fa fa-facebook text-white"></i></a>
+              <a href="#" class="nav-link"><i class="fa fa-instagram text-white"></i></a>
+              <a href="#" class="nav-link"><i class="fa fa-twitter text-white" ></i></a>
+              <a href="https://codepen.io/Oukchiren" class="nav-link"><i class="fa fa-pinterest text-white" ></i></a>
+            </li>
+            </ul>
+       
+          <li class="navbar-brand" ><a  class="nav-link text-white logo-brand">blogypedia.</a></li>
+
+          <ul class="navbar-nav " style="align-items: center;">
+          <li class="nav-item ">
+            <span class="d-md-block d-none text-white search fs24" >search</span>
+            </li>
+            <li class="nav-item ">  
+            <a  class="nav-link text-white" >
+                <i class="fa fa-1x fa-search text-white" style="font-size:22px"></i>
+              </a>
+            </li>
+            </ul>
+      </ul> 
+
+     </nav>
+    
+     <div   class="collapse navbar-collapse item-list" id="collapsibleNavbar" >
+        <ul class="nav flex-column d-md-none" >
+            <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="#"  class="nav-link text-white">Categories</a></li>
+            <li class="nav-item"><a href="#"  class="nav-link text-white">Blog</a></li>
+            <li class="nav-item"><a href="#"  class="nav-link text-white">Styles</a></li>
+            <li class="nav-item"><a href="#"  class="nav-link text-white">About</a></li>
+            <li class="nav-item"><a href="#"  class="nav-link text-white">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container mt-2 h-15  d-md-block d-none ">
+        <ul class="nav justify-content-center nav-horiz">
+            <li class="nav-item "><a href="#" class="nav-link text-white" >Home</a></li>
+            <li class="nav-item category"><a href="#"  class="nav-link color-gray">Categories</a>
+              <ul class="ul-hover" style="left:-9px">
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Work</a></li>
+              </ul>
+            </li>
+            <li class="nav-item blog"><a href="#"  class="nav-link color-gray" >Blog</a>
+                <ul class="ul-hover">
+                  <li><a href="#">Video Post</a></li>
+                  <li><a href="#">Audio Post</a></li>
+                  <li><a href="#">Gallery Post</a></li>
+                  <li><a href="#">Standard Post</a></li>
+                </ul>
+            </li>
+            <li class="nav-item "><a href="#"  class="nav-link color-gray" >Styles</a></li>
+            <li class="nav-item "><a href="#"  class="nav-link color-gray" >About</a></li>
+            <li class="nav-item "><a href="#"  class="nav-link color-gray" >Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="container-md container-fluid row mx-auto mt-3 p-0" >
+
+        <!-- column 1 -->
+        <div class="col-md-8 col-12 col-item hover-img-pre" >
+        <div class="img-effect hover-img hover-img-child">
+        <img  src="images/h1/img1.webp" height="564px" >
+        </div>
+        
+        <section  id="imgQueryitem"  >
+            <span class="badge mb-3" >Music</span><br>
+            <h1 class="mb-3" style="width: 70%;">What Your Music Preference Says About You and Your Personality.</h1>
+            <div class="media "> 
+                <img src="images/h1/img1.webp" class="rounded-circle mr-3 " >
+                <div class="media-body">
+                    <h5><small class="font-weight-bold color-gray">Ayoub Oukchiren . February 17, 2022</small></h5>
+                </div>
+                </div>
+                </section>
+        
+
+        </div>
+          <!--    column 2 -->
+        <div class="col-md-4 col-12 " style="padding: 0;">
+        <div class="col-12 img-effect hover-img col-item" >
+        <img  src="images/h1/img2.webp" alt="" height="282px"  >
+
+        <section >
+            <span class="badge mb-3" style="width:125px;">MANAGEMENT</span><br>
+            <h4 class="mb-3" >The Pomodoro Technique Really Works.</h4>
+            <div class="media"> 
+             <h6><small class="font-weight-bold color-gray" >Ayoub Oukchiren . February 17, 2022</small></h6>
+                </div>
+                </section>
+        </div>
+
+        <div class="col-12 img-effect hover-img col-item" >
+        <img src="images/h1/img3.webp" alt="" height="282px"  >
+        <section >
+            <span class="badge mb-3" style="width:100px">LIFESTYLE</span><br>
+            <h4 class="mb-3">Throwback To The Good Old Days.</h4>
+            <div class="media "> 
+             <h6><small class="font-weight-bold color-gray">Ayoub Oukchiren . February 17, 2022</small></h6>
+                </div>
+                </section>
+        </div>
+
+        </div>
+    </section>
+    </div>
+    <!-- SECTION 2 -->
+    <section class="section2 pb-5 home" >
+      <div class="container Pb-5" >
+      <section class="row" >
+          <!-- col1 -->
+          <div class="col-lg-4 col-md-6 col-9 mx-auto">
+              <div class="card mb-4 card-transition"   style="visibility: ;">
+                <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image10.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                  <div class="card-body p-4"> 
+                  <h6><small><i>December 15, 2017</i></small></h6>
+                  <h2 class="card-title">Just a Standard Format Post.</h2>
+                  <p class="card-text w-90 color-gray">
+                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                  </p>
+                  <a href="#" class="card-link">Desgin</a>
+                  <a href="#" class="card-link">Photography</a>
+              </div>
+              </div>
+
+
+              <div class="card mb-4" >
+                <div class="card-main">
+                  <div class="card-effect">
+                    <img class="card-img-top " src="images/h2/image2.webp" >  
+                    </div>
+                    <div class="card-effect-1 x p-0" >
+                      <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                    </div>
+                  </div>
+                <div class="card-body p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">Key Benefits Of Family Photography.</h2>
+                <p class="card-text w-90 color-gray">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Family</a>
+                <a  href="#" class="card-link">Photography</a>
+            </div>
+            </div>
+
+            <div class="card pb-3 mb-4">
+                <div class="bg_icons mx-auto" style="background-image: url('https://preview.colorlib.com/theme/philosophy/images/icons/icon-link.svg')">
+
+                </div>
+                <div class="card-body"> 
+                <h2 class="card-text text-center mb-5 w-90 font-weight-bold" style="font-size: 24px;">
+                    The Only Resource You Will Need To Start a Blog Using WordPress.
+                </h2>
+                <h5 class="text-center color-gray disabled" ><small>Dieter Rams</small></h5>
+            </div>
+            </div>
+
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image9.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">Throwback To The Good Old Days.</h2>
+                <p class="card-text w-90 color-gray">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Lifestyle</a>
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image6.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 10, 2017</i></small></h6>
+                <h2 class="card-title">Planning Your First Trip to Sydney.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Travel</a>
+                <a href="#" class="card-link">Vacation</a>
+                
+            </div>
+            </div>
+          </div>       
+          <!-- col2 -->
+          <div class="col-lg-4 col-md-6 col-9 mx-auto">
+            <div class="card pb-3 mb-4">
+                <div class="bg_icons mx-auto">
+
+                </div>
+                <div class="card-body"> 
+                <h2 class="card-text text-center mb-5 w-90 font-weight-bold" style="font-size: 24px;">
+                    Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.
+                </h2>
+                <h5 class="text-center color-gray disabled" ><small>Dieter Rams</small></h5>
+            </div>
+            </div>
+
+            <div class="card mb-4 " >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image1.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 10, 2017</i></small></h6>
+                <h2 class="card-title">No Sugar Oatmeal Cookies.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Cooking</a>
+                <a href="#" class="card-link">Health</a>
+                
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <!-- <div class="card-effect"> -->
+                  <!-- <img class="card-img-top " src="images/h2/image6.webp" >   -->
+                  <!-- </div> -->
+
+                  <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li  data-target="#demo" data-slide-to="0" ></li>
+                      <li  data-target="#demo" data-slide-to="1" class="active "></li>
+                      <li  data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <img class="carousel-item  active" src="images/h2/image4.webp" alt="Los Angeles" width="100%" height="408px">     
+                        <img class="carousel-item " src="images/h2/image13.webp" alt="Chicago" width="100%" height="408px"> 
+                        <img class="carousel-item " src="images/h2/image12.webp" alt="New York" width="100%" height="408px"> 
+                      </div>
+                      </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 10, 2017</i></small></h6>
+                <h2 class="card-title">Workspace Design Trends and Ideas.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Family</a>
+                <a href="#" class="card-link">Relationship</a>
+                
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image6.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 10, 2017</i></small></h6>
+                <h2 class="card-title">Planning Your First Trip to Sydney.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Travel</a>
+                <a href="#" class="card-link">Vacation</a>
+                
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image7.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 10, 2017</i></small></h6>
+                <h2 class="card-title">Throwback To The Good Old Days.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Lifestyle</a>              
+            </div>
+            </div>
+
+        </div>
+          <!-- col3 -->
+          <div class="col-lg-4 col-md-8 col-9 mx-auto">
+            <div class="card mb-4 "  >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image11.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">10 Interesting Facts About Caffeine.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Health</a>
+                
+            </div>
+            </div>
+
+            <div class="card mb-4 " >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image3.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">Visiting Theme Parks Improves Your Health.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Health</a>
+                <a href="#" class="card-link">Lifestyle</a>
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image5.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">What Your Music Preference Says About You and Your Personality.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Music</a>
+                <a href="#" class="card-link">Lifestyle</a>
+                
+            </div>
+            </div>
+
+            <div class="card mb-4" >
+              <div class="card-main">
+                <div class="card-effect">
+                  <img class="card-img-top " src="images/h2/image8.webp" >  
+                  </div>
+                  <div class="card-effect-1 x p-0" >
+                    <a href="#" class="text-white"  style="z-index: 1;">...</a>
+                  </div>
+                </div>
+                <div class="card-body  p-4"> 
+                <h6><small><i>December 15, 2017</i></small></h6>
+                <h2 class="card-title">Just Another Standard Format Post.</h2>
+                <p class="card-text w-90 color-gray ">
+                  Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                </p>
+                <a href="#" class="card-link">Desgin</a>
+                <a href="#" class="card-link">Photography</a>
+                
+            </div>
+            </div>
+
+           
+
+        </div>
+      </section>
+      </div>
+       <!-- section 3 -->
+       <div class="mx-auto text-center pt-4 list-next pb-5">
+        <button class="btn rounded-circle p-3" style="background-color: white;">
+            <i class="fa fa-1x fa-arrow-left font-weight-bold"></i>
+        </button>
+          <button class="btn font-weight-bold btn-hover "><span>1</span></button>
+          <button class="btn bg-black text-white font-weight-bold " > 2</button>
+          <button class="btn font-weight-bold btn-hover ">3</button>
+          <button class="btn font-weight-bold btn-hover ">4</button>
+          <button class="btn font-weight-bold btn-hover ">5</button>
+          <button class="btn font-weight-bold btn-hover">...</button>
+          <button class="btn font-weight-bold btn-hover ">8</button>
+          <button class="btn rounded-circle p-3 " style="background-color: white;">
+            <i class="fa fa-1x fa-arrow-right font-weight-bold"></i>
+          </button>
+      </div>
+      </section>
+      <!-- section 4 -->
+      <section class="pt-5">  
+      <div class="container pop-post row mx-auto ">
+          <!--  1 -->
+        <div class="col-md-8 col-12 row">
+         <h1 class="col-12 p-4 fs24 font-weight-bold">Popular Posts</h1>
+         <div class="col-md-6 col-12 pb-4">
+           <div class="media">
+               <img class="rounded-circle mr-3" src="images/h2/image3.webp" width="69px">
+               <div class="media-body">
+                   <h2 class="fs16 font-weight-bold">Visiting Theme Parks Improves Your Health.</h2>
+                   <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-12 pb-4">
+            <div class="media">
+                <img class="rounded-circle mr-3" src="images/h2/image2.webp" width="69px">
+                <div class="media-body">
+                    <h2 class="fs16 font-weight-bold">Key Benefits Of Family Photography.</h2>
+                    <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 col-12 pb-4">
+            <div class="media">
+                <img class="rounded-circle mr-3" src="images/h2/image1.webp" width="69px">
+                <div class="media-body">
+                    <h2 class="fs16 font-weight-bold">Absolutely No Sugar Oatmeal Cookies..</h2>
+                    <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 col-12 pb-4">
+             <div class="media">
+                 <img class="rounded-circle mr-3" src="images/h2/image7.webp" width="69px">
+                 <div class="media-body">
+                     <h2 class="fs16 font-weight-bold">Throwback To The Good Old Days.</h2>
+                     <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-6 col-12 pb-4">
+            <div class="media">
+                <img class="rounded-circle mr-3" src="images/h2/image11.webp" width="69px">
+                <div class="media-body">
+                    <h2 class="fs16 font-weight-bold">10 Interesting Facts About Caffeine.</h2>
+                    <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 col-12 pb-4">
+             <div class="media">
+                 <img class="rounded-circle mr-3" src="https://preview.colorlib.com/theme/philosophy/images/thumbs/small/xsalad-150.jpg.pagespeed.ic.xO_FVzLWy4.webp" width="69px">
+                 <div class="media-body">
+                     <h2 class="fs16 font-weight-bold">Healthy Mediterranean Salad Recipes</h2>
+                     <h5><small class="color-gray fs13">By John Doe on Dec 19, 2017</small></h5>
+                 </div>
+              </div>
+           </div>
+        </div>
+          <!--  2 -->
+        <div class="col-md-4 col-12 about">
+        <div class="card" style="border:1px">
+        <div class="card-body pb-2">
+         <h1 class="fs24 card-title mb-4 font-weight-bold">About blogypedia</h1>
+         <p class="card-text color-gray mb-3">Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <ul class="navbar-nav mx-auto mb-4" >
+            <li class="nav-item row "  style="background-color: white;" >
+                <a href="#"  class="nav-link "><i class="fa fa-facebook color-black"></i></a>
+                <a href="#" class="nav-link mx-2"><i class="fa fa-instagram color-black"></i></a>
+                <a href="#"  class="nav-link"><i class="fa fa-twitter color-black"></i></a>
+                <a href="#"  class="nav-link mx-2"><i class="fa fa-pinterest color-black" ></i></a>
+              </li>
+              </ul> 
+         </div>
+        </div>
+        <!-- 3  -->
+        <div class="col-12  text-center pt-4 pb-4 tags">
+            <h1 class="col-12 font-weight-bold mb-5 fs24">Tags</h1>
+            <div class="col-12 row"  style="letter-spacing: 2px;">
+            <div class="col-12 text-dark tagsitem">    
+            <a href="#" class="btn bg-gray text-white btn-mb text-dark  font-weight-bold" >SALAD</a>
+            <a href="#" class="btn bg-gray text-white btn-mb mx-2 text-dark font-weight-bold">RECIPE</a>
+            <a href="#" class="btn bg-gray text-white btn-mb text-dark font-weight-bold">PLACES</a>
+            <a href="#" class="btn bg-gray text-white btn-mb mx-2 text-dark font-weight-bold">TIPS</a>
+            <a href="#" class="btn bg-gray text-white btn-mb text-dark font-weight-bold">FRIENDS</a>
+            <a href="#" class="btn bg-gray text-white btn-mb mx-2 text-dark font-weight-bold">TRAVEL</a>
+            <a href="#" class="btn bg-gray text-white btn-mb text-dark font-weight-bold">EXERCICE</a>
+            </div>
+            <div class="col-12 tagsitem">
+            <a href="#" class="btn bg-gray text-white pb-2 btn-mb text-dark font-weight-bold ">READING</a>
+            <a href="#" class="btn bg-gray text-white pb-2 btn-mb mx-2 text-dark font-weight-bold">RUNNING</a>
+            <a href="#" class="btn bg-gray text-white pb-2 btn-mb text-dark font-weight-bold">SELF-HELP</a>
+            <a href="#" class="btn bg-gray text-white pb-2 btn-mb mx-2 text-dark font-weight-bold">VACATION</a>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+     <!-- footer -->
+     <footer class="row" >
+       <div class="col-md-6 col-12 row pb-4 footer1">
+         <ul class="nav-horizontal col-md-4 ">
+          <li class="nav-item mynav-item"><a class="nav-link text-white font-weight-bold" href="#">QUICK LINKS</a></li>
+           <li class="nav-item"><a class="nav-link color-gray " href="#">Home</a> </li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Blog</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Styles</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">About</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Contact</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Privacy Policy</a></li>
+         </ul>
+         <ul class="nav-horizontal col-md-4">
+          <li class="nav-item mynav-item"><a class="nav-link text-white font-weight-bold" href="#">ARCHIVES</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">January 2018</a> </li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">December 2017</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">November 2017</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">October 2017</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">September 2017</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">August 2017</a></li>
+         </ul>
+         <ul class="nav-horizontal col-md-4">
+          <li class="nav-item mynav-item"><a class="nav-link text-white font-weight-bold" href="#">SOCIAL</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Facebook</a> </li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Instagram </a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Twitter</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Pinterest</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">Google+</a></li>
+           <li class="nav-item"><a class="nav-link color-gray" href="#">LinkedIn</a></li>
+         </ul>
+       </div>
+       <div class="col-md-6 col-12 footer2">
+        <ul class="p-0" >
+          <li class="nav-item mynav-item"><a class="nav-link text-white font-weight-bold" href="#">OUR NEWSLETTER</a></li>
+          <li class="nav-item">
+            <a class="nav-link color-gray w-80 " style="line-height: 30px;font-family: 'metropolis-regular',sans-serif;"> Sit vel delectus amet officiis repudiandae est voluptatem. Tempora maxime provident nisi et fuga et enim exercitationem ipsam. Culpa consequatur occaecati.
+              <div class="input-group pt-4">
+                <div class="input-group-prepend bg-dark disabled" >
+                  <i class="fa fa-2x fa-envelope text-center disabled" style="width: 31px;line-height: 35px;cursor: text;"></i>
+                </div>
+              <input class="form-control bg-dark" type="email" placeholder="Email Address" style="border: 1px;">
+              <div class="input-group-append">
+              <button class="btn "  style="background-color: #04264a; color: white;">SEND</button>  
+              </div>
+              </div>
+            </a>
+              
+            </li>
+        
+          
+        </ul>
+
+       </div>
+       <div class="color-gray pl-4 Pb-5 footer3">
+        <i class="fa fa-2x fa-copyright fs16"></i>
+      <h4 style="display: inline;" class="fs16">Copyright Philosophy 2022</h4> 
+       </div>
+     </footer>   
+     <!-- button revient a zero  -->
+     <a class="btn btn-dark rounded-circle mr-4 mb-4 scrollbtn " href="#" style="border: 1px;font-size: 20px;width: 50px;height: 50px;">
+      <i class=" gg-arrow-up p-2" style="top:20%;left:8%"></i>
+      
+    </a>
+     
+     <script  src="js/javascript.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

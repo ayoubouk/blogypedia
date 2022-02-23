@@ -1,0 +1,382 @@
+html{
+    width: 100%;
+}
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.nav-item{
+    color:white
+}
+.badge{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.nav-item,.item-list,.bg-black{
+    background-color: black;
+}
+.color-black{
+    color: black;
+    }
+.nav-item nav{
+    justify-content: space-between;background-color:black;border-bottom:1px solid rgb(53, 52, 52)
+}
+
+.nav-link i,.fs23{
+    font-size: 23px;
+}
+ 
+.fs16{
+    font-size: 16px;
+}
+.fs13{
+    font-size: 13px;
+}
+.fs24{
+    font-size: 24px;
+}
+
+.nav-horiz{
+    padding: 8px;
+}
+.logo-brand
+{font-family: 'Lobster', cursive;font-size: 50px;}
+
+
+.search{
+    font-size: 12px;text-transform: uppercase;letter-spacing: 1px;
+}
+
+.color-gray{
+    color: rgb(175, 172, 172);
+    transition: color 1s ease ;
+}
+.bg-gray{
+    background-color: #ddd;
+    transition: background-color 1s ease ;
+    transition: opacity 1s ease;
+}
+div ul li a.color-gray:hover{
+    color: white;
+}
+.col-item{
+    padding: 0;position: relative;
+}
+.col-item img{
+    padding: 0;
+    width: 100%;
+}
+
+.col-item section{
+    padding: 0;position: absolute;bottom: 30px;left: 25px;z-index:1;
+}
+.col-item section span{
+    font-size:13px;padding: 5px;border-radius: 1px;background-color: #679a23;
+}
+
+.col-item section h4,.w-90{
+    width: 90%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+
+.img-effect{
+ position: relative;
+ 
+}
+.img-effect::after{  
+    position: absolute;
+    content: "";
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    
+    background-color: rgb(22, 18, 18);
+    opacity: 0.6;
+}
+.hover-img {
+    transition: opacity 1s ease;
+}
+
+.hover-img:hover{
+    opacity: 0.5;
+} 
+
+
+#imgQueryitem{
+    padding: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+#imgQueryitem span{
+    width:85px;font-size:15px;padding: 5px;border-radius: 1px;background-color: 01aef0;
+}
+#imgQueryitem h1{
+width:90%
+}
+#imgQueryitem div img{
+    width: 60px;
+}
+
+/*    section2 */
+
+.section2{
+    background-color:#f2f2f2;
+    padding-top: 100px;
+}
+.bg_icons{
+    background-image: url("https://preview.colorlib.com/theme/philosophy/images/icons/icon-quote.svg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 49px;
+    margin-top: 53px;
+    
+    
+}
+/* section3 */
+.btn-hover{
+    transition: border 0.5s ease;
+}
+.btn-hover:hover{
+    border: 2px solid #ddd;  
+}
+/*  */
+.bg-gray:hover{
+  
+  opacity: 0.7;
+}
+
+
+.btn-mb{
+    margin-bottom: 16px;
+}
+
+/* footer */
+.mynav-item{
+    padding: 5px;
+    padding-bottom: 38px;
+}
+.mynav-item::after{
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 34px;
+    width: 100px;
+    background-color: #6e6e6e;
+    height: 1px;
+}
+.mynav-item a{
+ letter-spacing: 3px;
+}
+
+ul li{
+    list-style: none;
+}
+footer{
+    background-color: black;padding: 100px 0 0 100px;
+}
+
+
+/* effet image */
+
+.card-effect-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.card-main{
+    position: relative;
+}
+.card-effect{
+    position: relative;
+   }
+
+.card-effect::after{
+ content: "";
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0;
+ height: 0;
+ width: 100%;
+ background-color: black;
+ opacity: 0.4;
+ transition: height 1s ease;
+}
+.card-main:hover .card-effect::after{
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+height: 100%;
+}
+
+
+
+.x{
+    visibility: hidden;
+    transition: visibility 0.2s ;
+    transition: color 1s ease;
+  }
+  .x a{
+      font-size: 22px;
+      transition: font-size 0.6s ease;
+  }
+  .card-main:hover .x{
+      visibility: visible;
+      
+      
+  }
+
+  .card-main:hover .x a{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+.scrollbtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+.ul-hover{
+    display: none;
+    visibility: hidden;
+    padding: 12px;
+    width: 116px;
+    position: absolute;
+    background-color: #292828;
+    top: 42px;
+    left: -28px;
+    /* text-align: center; */
+    transition: visibility 1s ease;
+    z-index: 1;
+}
+.ul-hover li{
+    margin-bottom: 1px;
+}
+.ul-hover li a{
+    color: white;
+    text-decoration: none;
+}
+
+.blog,.category{
+    position: relative;
+}
+.blog:hover .ul-hover,.category:hover .ul-hover{
+    display: block;
+    visibility: visible;
+}
+
+.hover-img-pre{
+    position: relative;overflow: hidden;
+}
+.hover-img-child{
+    position:absolute;
+     top:212px;
+}
+
+@media screen and (max-width:767px){
+
+.hover-img img{
+}
+
+#imgQueryitem{
+    position:absolute;
+    bottom: 30px;
+    left: 25px;
+    
+}
+#imgQueryitem span{
+    width:125px;
+    font-size:13px;
+}
+#imgQueryitem h1{
+    width: 90%;
+    font-size:24px
+}
+#imgQueryitem div div h5 small{
+    font-size:12.8px
+}
+.about,.tags{
+    text-align: center;
+}
+
+footer{
+    padding-left: 0;
+}
+.footer1,.footer2,.footer3{
+    text-align: center;
+    padding: 0;
+}
+.footer2 ul li a{
+    margin: auto;
+}
+.footer3{
+    margin: auto;
+}
+.mynav-item::after{
+    left: 12%;
+    width: 80%
+   
+}
+.search {
+    font-size: 24px;
+}
+
+.tagsitem{
+    padding: 0;
+}
+.hover-img-pre{
+    height: 560px;
+}
+.hover-img-child{
+    top:100px;
+     position: relative;
+}
+.logo-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 46px;
+}
+}
+
+
+
+/*  reload */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .disppear{
+    animation: vanish 2s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
